@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 34rem),
+    radial-gradient(circle at 80% 10%, rgba(139, 92, 246, 0.16), transparent 30rem),
+    #0b1120;
+  color: #f9fafb;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.glass-panel {
+  background: rgba(17, 24, 39, 0.76);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-shell {
+  @apply mx-auto w-full max-w-7xl px-4 py-7 sm:px-6 lg:px-8;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(31, 41, 55, 0.92), rgba(17, 24, 39, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  @apply rounded-xl;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus:ring-4 focus:ring-blue-500/20;
+}
+
+input,
+textarea,
+select {
+  background: rgba(15, 23, 42, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f9fafb !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+body .text-slate-950,
+body .text-slate-900,
+body .text-slate-800 {
+  color: #f9fafb !important;
+}
+
+body .text-slate-700,
+body .text-slate-600,
+body .text-slate-500 {
+  color: #9ca3af !important;
+}
+
+body .border-slate-200,
+body .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+body .bg-white,
+body .bg-slate-50 {
+  background-color: rgba(17, 24, 39, 0.82) !important;
+}
+
+body .shadow-soft {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28) !important;
+}
+
+body .recharts-cartesian-grid line {
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+body .recharts-text {
+  fill: #9ca3af;
+}
+
+body .recharts-default-tooltip {
+  background: #111827 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  color: #f9fafb !important;
+}
